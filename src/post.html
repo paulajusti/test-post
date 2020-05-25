@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src=" ./js/post.js"> </script>
+</head>
+
+<body>
+  <div id="post">
+
+    <a href="javascript:history.back()">
+      <button type="button" class="btn btn-link button-back">
+        < <span>back to list</span>
+      </button> </a>
+    <div class="post__block">
+      <div class="post__header">
+        <h4>Post</h4>
+      </div>
+      <div id="post__content"></div>
+    </div>
+  </div>
+  <div id="comments">
+    <div class="comment__header">
+      <h5>Comments</h5>
+    </div>
+    <div id="comment__content" class="row col-12"></div>
+  </div>
+
+  <form id="comments__form" method="get" action="#">
+    <label for="formTitle">Submit your comment</label>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" required class="form-control" id="inputName" name="inputName" aria-describedby="name"
+        placeholder="Enter name">
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea required class="form-control" id="inputComment" name="inputComment" rows="3"></textarea>
+      <small class="form-text text-muted">tell us what you think :)</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+  <script type="text/javascript" src=" ./js/post.js"> </script>
+</body>
+
+</html>
